@@ -58,7 +58,6 @@ class _AddPageState extends State<AddPage> {
       category: selectedCategory!,
       date: selectedDate!,
       amount: amount,
-      balance: 0, // Saldo akan dihitung di DatabaseHelper
     );
 
     // Save transaction to database

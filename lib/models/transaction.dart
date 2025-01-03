@@ -5,7 +5,6 @@ class Transaction {
   final String category;
   final DateTime date;
   final int amount;
-  final int balance;
 
   Transaction({
     this.id,
@@ -14,7 +13,6 @@ class Transaction {
     required this.category,
     required this.date,
     required this.amount,
-    required this.balance,
   });
 
   Map<String, dynamic> toMap() {
@@ -25,7 +23,6 @@ class Transaction {
       'category': category,
       'date': date.toIso8601String(),
       'amount': amount,
-      'balance': balance,
     };
   }
 
@@ -37,7 +34,6 @@ class Transaction {
       category: map['category'],
       date: DateTime.parse(map['date']),
       amount: map['amount'],
-      balance: map['balance'],
     );
   }
 }
