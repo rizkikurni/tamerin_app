@@ -1,16 +1,2 @@
-# tamerin
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tamerin - Aplikasi Pencatat Keuangan
+Tamerin adalah aplikasi pencatat keuangan yang dirancang untuk membantu penggunanya mengelola dan melacak pemasukan serta pengeluaran sehari-hari dengan mudah. Dengan antarmuka yang user-friendly dan fitur-fitur canggih, Tamerin memungkinkan pengguna untuk mencatat transaksi, mengategorikan pengeluaran, serta melihat laporan keuangan dalam berbagai format yang membantu dalam perencanaan dan pengelolaan keuangan pribadi.
