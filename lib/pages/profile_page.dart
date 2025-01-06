@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tamerin/pages/login_page.dart';
+// import 'package:tamerin/pages/login_page.dart';
 
 class ProfilePage extends StatelessWidget {
   @override

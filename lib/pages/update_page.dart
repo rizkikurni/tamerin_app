@@ -79,13 +79,13 @@ class _UpdatePageState extends State<UpdatePage> {
 
     final dbHelper = DatabaseHelper.instance;
     await dbHelper.updateTransaction(updatedTransaction);
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Transaction updated successfully!')),
-    );
+    // ScaffoldMessenger.of(context).showSnackBar(
+    //   const SnackBar(content: Text('Transaction updated successfully!')),
+    // );
 
     // await Future.delayed(const Duration(seconds: 1));
 
-    // Navigator.pop(context, true);
+    Navigator.pop(context, true);
   }
 
   @override

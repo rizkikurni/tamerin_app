@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tamerin/models/database_helper.dart';
 import 'package:tamerin/models/transaction.dart' as model;
+import 'package:tamerin/widgets/piechart.dart';
 import 'package:tamerin/widgets/transaction_item.dart';
 
 class TransactionPage extends StatefulWidget {
@@ -106,21 +107,35 @@ class _TransactionPageState extends State<TransactionPage> {
 
                 final transactions = snapshot.data!;
 
-                return ListView.builder(
-                  itemCount: transactions.length,
-                  itemBuilder: (context, index) {
-                    final transaction = transactions[index];
-                    return TransactionItem(
-                        id: transaction.id,
-                        type: transaction.type,
-                        name: transaction.name,
-                        category: transaction.category,
-                        amount: transaction.amount,
-                        date: transaction.date
-                            .toLocal()
-                            .toIso8601String()
-                            .split('T')[0]);
-                  },
+                return Column(
+                  children: [
+                    const SizedBox(height: 16),
+                    SizedBox(
+                      height:
+                          200, // Berikan tinggi eksplisit sesuai kebutuhan Anda
+                      child: PieChartWidget(transactions: transactions),
+                    ),
+                    const SizedBox(height: 16),
+                    Expanded(
+                      child: ListView.builder(
+                        itemCount: transactions.length,
+                        itemBuilder: (context, index) {
+                          final transaction = transactions[index];
+                          return TransactionItem(
+                            id: transaction.id,
+                            type: transaction.type,
+                            name: transaction.name,
+                            category: transaction.category,
+                            amount: transaction.amount,
+                            date: transaction.date
+                                .toLocal()
+                                .toIso8601String()
+                                .split('T')[0],
+                          );
+                        },
+                      ),
+                    ),
+                  ],
                 );
               },
             ),
