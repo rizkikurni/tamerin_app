@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
           Padding(
             padding: const EdgeInsets.all(15),
             child: Image.asset(
-              "assets/logo_tamerin.png",
+              "assets/logo.png",
               width: 300,
               height: 350,
             ),
@@ -79,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                 const Text(
                   'Log In',
                   style: TextStyle(
-                    color: Color.fromRGBO(0, 43, 122, 1),
+                    color: Color(0xFF8E4FF4),
                     fontSize: 27,
                     fontWeight: FontWeight.w500,
                   ),
@@ -122,7 +122,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                       borderSide: BorderSide(
                         width: 1,
-                        color: Color.fromRGBO(0, 43, 122, 1),
+                        color: Color(0xFF8E4FF4),
                       ),
                     ),
                   ),
@@ -155,7 +155,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                       borderSide: BorderSide(
                         width: 1,
-                        color: Color.fromRGBO(0, 43, 122, 1),
+                        color: Color(0xFF8E4FF4),
                       ),
                     ),
                   ),
@@ -186,7 +186,7 @@ class _LoginPageState extends State<LoginPage> {
                           }
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(0, 43, 122, 1),
+                          backgroundColor: const Color(0xFF8E4FF4),
                         ),
                         child: const Text(
                           'Login',

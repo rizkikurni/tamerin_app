@@ -210,7 +210,7 @@ class _AddPageState extends State<AddPage> {
               child: ElevatedButton(
                 onPressed: _submitTransaction,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF6C5DD3),
+                  backgroundColor: const Color(0xFF8E4FF4),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
                   shape: RoundedRectangleBorder(

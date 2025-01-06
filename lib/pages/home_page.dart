@@ -128,6 +128,7 @@ class _HomePageState extends State<HomePage> {
                           child: Column(
                             children: transactions.map((transaction) {
                               return TransactionItem(
+                                id: transaction.id,
                                 type: transaction.type,
                                 name: transaction.name,
                                 category: transaction.category,

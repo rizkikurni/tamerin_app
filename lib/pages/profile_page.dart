@@ -41,31 +41,31 @@ class ProfilePage extends StatelessWidget {
             const SizedBox(height: 32),
 
             // Logout Button
-            ElevatedButton.icon(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => LoginPage()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              icon: const Icon(Icons.logout, color: Colors.white),
-              label: const Text(
-                "Logout",
-                style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-            ),
-            const SizedBox(height: 32),
+            // ElevatedButton.icon(
+            //   onPressed: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(builder: (context) => LoginPage()),
+            //     );
+            //   },
+            //   style: ElevatedButton.styleFrom(
+            //     backgroundColor: Colors.red,
+            //     padding:
+            //         const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+            //     shape: RoundedRectangleBorder(
+            //       borderRadius: BorderRadius.circular(8),
+            //     ),
+            //   ),
+            //   icon: const Icon(Icons.logout, color: Colors.white),
+            //   label: const Text(
+            //     "Logout",
+            //     style: TextStyle(
+            //         fontSize: 16,
+            //         fontWeight: FontWeight.bold,
+            //         color: Colors.white),
+            //   ),
+            // ),
+            // const SizedBox(height: 32),
 
             // Additional Options (e.g., About App)
             ListTile(

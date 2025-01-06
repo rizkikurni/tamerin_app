@@ -111,6 +111,7 @@ class _TransactionPageState extends State<TransactionPage> {
                   itemBuilder: (context, index) {
                     final transaction = transactions[index];
                     return TransactionItem(
+                        id: transaction.id,
                         type: transaction.type,
                         name: transaction.name,
                         category: transaction.category,

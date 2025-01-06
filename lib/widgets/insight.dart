@@ -11,11 +11,11 @@ class Insight extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Container(
         decoration: BoxDecoration(
-          color: Color(0xFFF3E5F5),
+          color: Color(0xFFEFE8F8),
           borderRadius: BorderRadius.circular(12),
         ),
         child: ListTile(
-          leading: Icon(Icons.lightbulb, color: Color(0xFF4A148C)),
+          leading: Icon(Icons.lightbulb, color: Color(0xFF8E4FF4)),
           title: Text(
             "Let's check your Financial Insight for the month of June!",
             style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),

@@ -178,10 +178,15 @@ Terakhir, pertimbangkan alternatif seperti program KPR dengan bunga rendah. Bany
               );
             },
             child: Card(
+              color: Colors.white,
               margin: const EdgeInsets.only(bottom: 16.0),
-              elevation: 2,
+              elevation: 0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
+                side: BorderSide(
+                  color: Colors.black, // Warna border
+                  width: 0.2, // Ketebalan border
+                ),
               ),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
